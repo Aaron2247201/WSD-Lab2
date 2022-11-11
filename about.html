@@ -106,6 +106,13 @@ video {
   padding: 1em;
   font-size: 20px;
 }
+
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: #0077ff;
+     color: #0077ff(255, 255, 255);
+     }
+
 </style>
 </head>
 
@@ -120,14 +127,41 @@ video {
 </div>
 
 <div class="paras" align="center">
-<h1>TOP PICKS</h1>
-<iframe height="400" width="712"   
-src="https://www.youtube.com/embed/yHvABOnOhx8">   
-</iframe>   
+<h1>LATEST TRAILERS</h1>
+<video width="712" height="400" controls>
+  <source src="video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 <br><br>
 </div>
 <hr>
 
+
+<div class="paras" align="center">
+  <h1>LATEST SONGS</h1>
+  <p><strong>Ezio's Family</strong></p><audio controls>
+    <source src="a1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+  <br>
+
+
+  <p><strong>Lokiverse</strong></p>
+  <audio controls>
+    <source src="a2.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+  <br>
+
+  <p><strong>Attack on Titan</strong></p>
+  <audio controls>
+    <source src="a3.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+  <br><br>
+  </div>
+  <hr>
 
 <div class="paras" align="center">
 <h1>OUR TEAM</h1>

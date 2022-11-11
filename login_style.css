@@ -117,7 +117,7 @@ h1{
     margin-bottom: 20px;
 }
 
-.loginbox input[type="text"], input[type="number"], input[type="password"], input[type="email"], select
+.loginbox input[type="text"], input[type="number"],input[type="tel"],input[type="date"],input[type="password"], input[type="email"], select
 {
     border: none;
     border-bottom: 1px solid #fff;
@@ -127,8 +127,21 @@ h1{
     color: #fff;
     font-size: 16px;
 }
+
+.loginbox input[type=date]::-webkit-calendar-picker-indicator
+{ 
+  background-color: #fff;
+}
+
 .loginbox input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button 
+{ 
+  -webkit-appearance: none; 
+   margin: 0; 
+}
+
+.loginbox input[type=tel]::-webkit-inner-spin-button, 
+input[type=tel]::-webkit-outer-spin-button 
 { 
   -webkit-appearance: none; 
    margin: 0; 
