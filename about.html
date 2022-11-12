@@ -133,6 +133,22 @@ audio::-webkit-media-controls-play-button,
   <source src="video.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
+<br>
+
+<label for="sli"><p style="margin-left: 20px"><strong>Rating: </strong></p></label>
+<input type="range" name="sli" id="sli" min="1" max="10" step="1" value="5" />
+<output class="sli-output" for="sli"></output>
+<script>
+
+const price = document.querySelector("#sli");
+const output = document.querySelector(".sli-output");
+output.textContent = price.value;
+price.addEventListener("input", () => {
+    output.textContent = price.value;
+});
+
+</script>
+
 <br><br>
 </div>
 <hr>
